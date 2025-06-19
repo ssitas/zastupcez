@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absence a omluvenky</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <a href="index.html" class="back-button">Zpět</a>
+    <div class="container">
+        <h2 class="page-title">Absence a omluvenky SŠITAS</h2>
+        <p class="info-text">Zde je prostor pro omluvení žáků z výuky nebo exkurzí rodiči nebo se zde mohou omluvit studenti 18 a více let.</p>
+        <hr>
+
+        <div id="form-container">
+            <form id="absence-form" class="form-container">
+                <label for="start-date">Zapište den zahájení absence:</label>
+                <input type="text" id="start-date" name="start-date" required>
+
+                <label for="end-date">Zapište den (předpokládaného) ukončení absence nebo ponechte stejný:</label>
+                <input type="text" id="end-date" name="end-date" required>
+
+                <label for="time-range">Zapište časový rozsah (př.: všechny hodiny, pouze 3 až 7 hodina atp.)</label>
+                <input type="text" id="time-range" name="time-range" required>
+
+                <label for="reason">Důvod (jedno až dvě slova):</label>
+                <input type="text" id="reason" name="reason" required>
+
+                <label for="description">Popis (popište důvod větou nebo více větami):</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <button type="submit">Odeslat omluvenku absence</button>
+            </form>
+        </div>
+
+        <div id="success-message">
+            Absence byla úspěšně omluvena!
+        </div>
+
+    </div>
+    <script src="skript.js"></script>
+</body>
+</html>
