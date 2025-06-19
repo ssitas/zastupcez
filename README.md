@@ -1,0 +1,2 @@
+# zastupcez
+ignorujte to!
